@@ -1,0 +1,137 @@
+/* Page Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Josefin Slab", serif;
+}
+
+#main-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* End Page Style */
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)), url(img/header-bg.jpg) no-repeat center;
+  background-size: cover;
+  float: right;
+  transition: width .5s;
+}
+
+header div.center-txt{
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header div.center-txt h1 {
+  font-size: 300%;
+  margin-bottom: 2%;
+  color: #fff;
+}
+
+header div.center-txt p {
+  font-size: 125%;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+header div.center-txt a {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1.5% 2% 1% 2%;
+  border-radius: 20px;
+  margin-right: 1%;
+  transition:  background .2s;
+}
+
+header div.center-txt a:hover {
+  background: #233656;
+  color: #EEF4F2;
+}
+
+header label i.fa-ellipsis-v {
+  font-size: 150%;
+  padding: 10px;
+  color: #fff;
+}
+
+header label i.fa-ellipsis-v:hover {
+  background: #233656;
+}
+
+header nav.nav-header {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  opacity: 1;
+  width: 20%;
+  height: 100vh;
+  background: #EEF4F2;
+  transition: left .5s;
+}
+
+header nav.nav-header ul {
+    margin-top: 10%;
+}
+
+header nav.nav-header ul li {
+  margin-bottom: 5%;
+  border-bottom: 1px solid #c2ddec;
+  padding-left: 5%;
+}
+
+header nav.nav-header ul li a {
+  display: inline-block;
+  padding: 5% 0 0 3%;
+  border-top: 2px solid transparent;
+  color: #777;
+  font-weight: bold;
+  width: 80%;
+  transition: color .2s border-top.2s;
+}
+
+header nav.nav-header ul li a:hover {
+  color: #2B3A42;
+  border-top: 2px solid #2B3A42;
+}
+
+input#nav-ctrl:checked ~ div.header-clear header {
+  width: 80%;
+}
+
+input#nav-ctrl:checked ~ div.header-clear header nav.nav-header {
+  left: 0;
+}
+
+div.header-clear:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* End Header */
